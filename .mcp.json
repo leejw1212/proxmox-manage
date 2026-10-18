@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "proxmox": {
+      "command": "npx",
+      "args": ["-y", "@bldg-7/proxmox-mcp@1.3.0"],
+      "env": {
+        "PROXMOX_HOST": "${PROXMOX_HOST}",
+        "PROXMOX_PORT": "${PROXMOX_PORT:-8006}",
+        "PROXMOX_USER": "${PROXMOX_USER}",
+        "PROXMOX_TOKEN_NAME": "${PROXMOX_TOKEN_NAME}",
+        "PROXMOX_TOKEN_VALUE": "${PROXMOX_TOKEN_VALUE}",
+        "PROXMOX_SSL_MODE": "${PROXMOX_SSL_MODE:-insecure}",
+        "PROXMOX_ALLOW_ELEVATED": "${PROXMOX_ALLOW_ELEVATED:-false}"
+      }
+    }
+  }
+}
